@@ -1,0 +1,43 @@
+<% layout('./layouts/boilerplate.ejs')-%>
+
+    
+    <div class="row">
+        <div class="col-8 offset-2 mt-3" >
+            <h2>Create a new Listing</h2> 
+    <form method="POST" action="\listing" enctype="multipart/form-data" >
+        <div class="mb-3">
+            <label for="title" class="form-label">Add a Catchy Title</label>
+        <input type="text" placeholder="enter title" name="listing[title]" class="form-control " required>
+        </div>
+        <div class="mb-3">
+            <lable for="description" class="form-label">Description</lable>
+            <textarea placeholder="enter description" name="listing[description]" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Listing image</label>
+            <input placeholder="url for image/link" type="file" name="listing[image]" class="form-control" required>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" name="listing[price]" placeholder="1200" class="form-control" required>
+        </div>
+        
+        <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" placeholder="India" name="listing[country]" class="form-control" required>
+        </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" placeholder="Jaipur,Delhi" name="listing[location]"  class="form-control"required >
+        </div>
+        <button class="btn btn-dark add-btn mt-3 ">Add</button>
+        <br><br>
+
+    </form>
+</div>
+</div>
+<script src="/public/js/script.js"></script>
+

@@ -1,0 +1,128 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+
+}
+.fa-compass{
+    color:#fe424e;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 ;
+}
+.f-info-links,.f-info-socials,.f-info-name{
+    width:100%;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links a{
+    text-decoration: none;
+    margin-right: 1.4rem;
+}
+.f-info-socials i{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+}
+
+.f-info{
+    height: 8rem;
+    text-align: center;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: center;
+    
+    
+}
+
+.listing_card{
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius:1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body{
+    padding: 0;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+.listing-show{
+    text-decoration: none;
+    color: #222222;
+}
+.card-img-overlay{
+    background-color: white;
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.1;
+    transition: 0.2s;
+}
+
+.add-btn{
+    background-color: #fe424e;
+    border: none;
+}
+
+.show-img{
+    border-radius:2rem ;
+    height: 18rem;
+    
+}
+.show-btn{
+    display: flex;
+    align-items: center;    
+}
+
+.add-btn{
+    margin-right: 2rem;
+}
+
+.btn-search{
+    background-color: #fe424e;
+    color: white;
+    border-radius: 25px; 
+}
+.btn-search:hover{
+    background-color: #fe424e;
+    color: white; 
+}
+
+.btn-search i{
+    display: inline;
+    margin-right: 0.7rem;
+}
+.search input{
+    width:300px;
+    flex:1;
+    border-radius: 50px !important;
+    text-align: center;
+}
